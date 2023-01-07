@@ -12,5 +12,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           {/* </React.StrictMode> */}
      </Router>
 );
-
-// D4WC2PP6C4DZXZ
