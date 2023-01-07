@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import { useLayoutEffect } from "react";
+import { useRef, useLayoutEffect, useState } from "react";
 
 export const Quote = ({ quote, author }) => {
      const pRef = useRef();
@@ -18,7 +17,7 @@ export const Quote = ({ quote, author }) => {
                     </p>
                     <footer className="blockquote-footer">{author}</footer>
                </blockquote>
-               <Code>{JSON.stringify(boxSize)}</Code>
+               <code>{JSON.stringify(boxSize)}</code>
           </>
      );
 };
