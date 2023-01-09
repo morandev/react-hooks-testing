@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import MultipleCustomHooks from "../../src/components/useEffectHook/MultipleCustomHooks";
-import useFetch from "../../src/hooks/useFetch";
-import { useCounter } from "../../src/hooks/useCounter";
+import MultipleCustomHooks from "../../../src/components/useEffectHook/MultipleCustomHooks";
+import { useCounter } from "../../../src/hooks/useCounter";
+import useFetch from "../../../src/hooks/useFetch";
 
 //0. mock de useFetch y useCounter
 jest.mock("../../src/hooks/useFetch");
