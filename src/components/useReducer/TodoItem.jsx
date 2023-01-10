@@ -11,8 +11,8 @@ const TodoItem = ({ id, description, done, deleteTodo, toggleTodo }) => {
           <li className="list-group-item d-flex justify-content-between">
                <span
                     className={`align-self-center user-select-none pe-auto ${
-                         done && "text-decoration-line-through"
-                    }`}
+                         done && "text-decoration-line-through" || ''}`}
+                    aria-label="span"
                >
                     {description}
                </span>
