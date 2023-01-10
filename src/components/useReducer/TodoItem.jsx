@@ -24,12 +24,14 @@ const TodoItem = ({ id, description, done, deleteTodo, toggleTodo }) => {
                                    : "btn-outline-success"
                          }`}
                          onClick={toggleDone}
+                         aria-label="boton-done"
                     >
                          {done ? "TODO" : "DONE"}
                     </button>
                     <button
                          className="btn btn-outline-danger"
                          onClick={handleDelete}
+                         aria-label="boton-del"
                     >
                          DEL
                     </button>
