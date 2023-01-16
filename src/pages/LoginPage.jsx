@@ -32,12 +32,13 @@ const LoginPage = () => {
                     </thead>
                     <tbody>
                          <tr>
-                              <td ref={celdaNombre} contentEditable>{user?.nombre}</td>
-                              <td ref={celdaApellido} contentEditable>{user?.apellido}</td>
-                              <td ref={celdaRol} contentEditable>{user?.rol}</td>
+                              <td ref={celdaNombre} aria-label="nombre" contentEditable>{user?.nombre}</td>
+                              <td ref={celdaApellido} aria-label="apellido" contentEditable>{user?.apellido}</td>
+                              <td ref={celdaRol} aria-label="rol" contentEditable>{user?.rol}</td>
                               <td>
                                    <button
                                         className="btn btn-primary mx-1"
+                                        aria-label="save-button"
                                         onClick={handleGuardar}
                                    >
                                         SAVE
